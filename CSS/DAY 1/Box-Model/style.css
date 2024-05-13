@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: aquamarine;
+  border: solid brown 5px;
+  /* border-radius: 20%; */
+  /* border-top-left-radius: 10px; */
+  /* border-top: solid brown 5px; */
+  width: 350px;
+  height: 200px;
+}
+span {
+  background-color: aquamarine;
+  border: solid brown 5px;
+  /* border-radius: 20%; */
+  /* border-top-left-radius: 10px; */
+  /* border-top: solid brown 5px; */
+  width: 350px;
+  height: 200px;
+}
+
+.firstPara {
+  background-color: red;
+  border: solid brown 5px;
+  width: 350px;
+  /* border-radius: 20%; */
+}
+
+.secPara {
+  background-color: yellow;
+  border: solid brown 5px;
+  width: 350px;
+  /* border-radius: 20%; */
+}
+
+.thirdPara {
+  background-color: aquamarine;
+  border: solid brown 5px;
+  width: 350px;
+  /* border-radius: 20%; */
+  background-color: cadetblue;
+}

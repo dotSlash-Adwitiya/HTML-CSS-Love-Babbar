@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: solid 1px black;
+      }
+      img {
+        margin: 10px;
+      }
+      .img2 {
+        /* position: relative; */
+        position: absolute; /* Comment to remove OVERLAPPING Image*/
+        /* top: 50px; */
+        /* left: 100px; */
+      }
+      .img4 {
+        position: fixed; /* Fixed container crosses even the parent container (UNLIKE STICKY) - and stays on ENTIRE PAGE */
+      }
+      .img3 {
+        position: sticky; /*STICKY Image will stay on screen only in the parent container !! */
+        top: 100px;
+      }
+      .container {
+        height: 9000px;
+      }
+
+      .box {
+        background-color: beige;
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="img-1.jpeg"
+        alt="poster-1"
+        width="300px"
+        height="300px"
+        class="img1"
+      />
+      <img
+        src="img-1.jpeg"
+        alt="poster-2"
+        width="300px"
+        height="300px"
+        class="img2"
+      />
+      <img
+        src="img-1.jpeg"
+        alt="poster-3"
+        width="300px"
+        height="300px"
+        class="img3"
+      />
+      <img
+        src="img-1.jpeg"
+        alt="poster-4"
+        width="300px"
+        height="300px"
+        class="img4"
+      />
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>

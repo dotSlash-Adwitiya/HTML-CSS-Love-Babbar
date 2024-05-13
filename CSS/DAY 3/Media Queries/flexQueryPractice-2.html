@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      background-color: beige;
+      border: solid 5px black;
+      margin: 2px;
+      padding: 2px;
+      display: flex;
+      flex-direction: row;
+    }
+    .box {
+      border: solid 2px black;
+      margin: 2px;
+      padding: 2px;
+      /* width: 300px;
+      height: 300px; */
+    }
+
+    #box1 {
+      background-color: cadetblue;
+    }
+    #box2 {
+      background-color: aquamarine;
+    }
+
+    /* We don't need to write below MEDIA_QUERY because by default the direction is : ROW */
+    /* @media (min-width: 640px) {
+      .container {
+        flex-direction: row;
+      }
+    } */
+
+    /* After the max-width of 640px, the flex element will change direction to column */
+    @media (max-width: 640px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          voluptates perferendis excepturi praesentium nihil inventore quod.
+          Tempore pariatur nobis ut? Possimus reprehenderit facilis soluta
+          dolorem voluptatibus, atque at ullam ut? At eveniet impedit ipsam
+          consectetur pariatur obcaecati autem voluptates quae debitis ducimus,
+          eos itaque. Dolor eum corporis provident vitae aliquam enim, natus
+          saepe libero, impedit eos quo rerum, harum beatae?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          dignissimos facilis modi eaque natus quia corrupti quaerat dicta
+          repellendus obcaecati repudiandae, et, tenetur, odio distinctio?
+          Laborum sint mollitia facere cumque! Accusamus sapiente natus eaque
+          officiis porro rerum quam aliquam voluptatibus esse impedit? Dolorum
+          doloribus magnam nesciunt excepturi veritatis recusandae quidem cum
+          laudantium. Quia dolores eligendi nihil quam inventore, odio rem.
+          Illum facilis reprehenderit obcaecati omnis nobis. Incidunt
+          dignissimos iure quasi nostrum molestias eum quidem vel velit sit
+          amet. Doloribus voluptas fugit natus mollitia eligendi, quia est
+          placeat vitae culpa iste.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <img src="img2.jpeg" alt="Scenery Text" />
+      </div>
+    </div>
+  </body>
+</html>

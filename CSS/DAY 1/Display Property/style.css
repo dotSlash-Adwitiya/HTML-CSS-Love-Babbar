@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  /* width: 300px;
+  height: 300px; */
+  padding: 50px;
+  margin: 100px;
+  border: solid black 5px;
+}
+
+h1 {
+  background-color: aquamarine;
+  border: solid brown 5px;
+  /* border-radius: 20%; */
+  /* border-top-left-radius: 10px; */
+  /* border-top: solid brown 5px; */
+}
+span {
+  background-color: blue;
+  border: solid brown 5px;
+  width: 150px; /* Will NOT work because its an inline element */
+  height: 150px; /* Will NOT work because its an inline element */
+  /* padding: 15px; */
+  /* margin: 100px; */
+}
+
+.firstPara {
+  background-color: red;
+  border: solid brown 5px;
+  width: 350px;
+  /* border-radius: 20%; */
+}
+
+.secPara {
+  background-color: yellow;
+  border: solid brown 5px;
+  width: 350px;
+  /* border-radius: 20%; */
+}
+
+.thirdPara {
+  display: inline-block;
+  background-color: aquamarine;
+  border: solid brown 5px;
+  width: 150px;
+  /* border-radius: 20%; */
+  background-color: cadetblue;
+}
