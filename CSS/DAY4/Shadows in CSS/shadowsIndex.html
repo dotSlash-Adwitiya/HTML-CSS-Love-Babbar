@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: brown;
+        --custom-width: 440px;
+      }
+      .container {
+        background-color: beige;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background-color: aquamarine;
+        height: 440px;
+        width: var(--custom-width);
+        border: 2px solid var(--primary-color);
+        margin: 5px;
+        padding: 5px;
+        /* 1. Simple box-shadow, 2. box-shadow with blur-radius (only +ve values allowed) */
+        /* box-shadow: 10px 15px blue; */
+        /* box-shadow: 10px 15px 50px brown;    */
+        /* /* Four length values and a color */
+        /* <length> | <length> | <length> | <length> | <color> */
+        /* box-shadow: 10px 15px 50px 100px rgba(10, 22, 33, 9.11); - using rgba fn() */
+        /* box-shadow: inset 10px 15px 50px; -- Applying inside shadows*/
+        /* box-shadow: 10px 15px 20px cyan, 20px -10px red;  -- Applying Multiple Shadows */
+      }
+      #head1 {
+        text-shadow: 5px 5px #558abb;
+        /* text-shadow: yellow 12px 13px 2px; */
+        /* text-shadow: wheat 12px 13px; */
+        /* text-shadow: 12px 13px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="download.jpeg" alt="" />
+        <h2 id="head1">Welcome to codehelp</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+          aspernatur, vel quas architecto vitae, enim animi sapiente odit quod
+          deserunt sed similique! Repellendus reprehenderit a culpa et
+          consequatur harum ad? Quis perferendis repellendus, tempora provident
+          ipsam nihil, harum praesentium iste dolorum magnam exercitationem
+          reprehenderit nulla veritatis aliquid fuga consequatur dignissimos
+          debitis eos nobis commodi! Soluta ut dolor placeat ipsam rem?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
