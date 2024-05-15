@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: beige;
+        border: solid 2px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+        transition: all 3s linear;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-content: center;
+      }
+      p {
+        font-size: 36px;
+      }
+      .box:hover {
+        /* transform: rotate(360deg); -- rotate transformation!!! */
+        /* transform: scale(2); --Scale = ENLARGE Element*/
+        /* transform: rotate(-360deg); -- rotate in ANTI-CLOCKWISE*/
+        /* transform: skew(-45deg); -- skew in left or right direction*/
+        transform: translate(500px); /* Transform to x,y plane (direction)*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>This is codehelp's box!</p>
+      </div>
+    </div>
+  </body>
+</html>
