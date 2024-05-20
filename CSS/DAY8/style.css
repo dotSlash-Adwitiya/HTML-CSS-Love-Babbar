@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 300vh;
+  width: 100vw;
+  overflow-x: none;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+#navList {
+  width: 100%;
+  list-style: none;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContainer {
+  width: 100vw;
+  background-color: rgba(112, 112, 172, 0.733);
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+}
+
+#navLogo {
+  font-size: 2.8rem;
+  justify-content: left;
+  color: azure;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+}
+
+#navItems {
+  display: flex;
+  gap: 40px; /*! VERY[IMP] For Increasing the space between elements, 1st set flex then increase gap. */
+}
+
+.footerBox {
+  width: 100%;
+  position: relative;
+  align-items: end;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  color: azure;
+  text-align: center;
+  min-height: 40px;
+}
+
+.contentBox {
+  width: 50%;
+  margin: auto;
+  /* border: 3px solid black; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 5rem;
+  box-shadow: 0px 0px 30px blue;
+}
+
+.footerBox p {
+  color: azure;
+  font-size: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.rightBox {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 20px;
+}
+
+.rightBox img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  transition: all 0.8s linear 0s;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+}
+
+.leftBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leftBox h2 {
+  font-size: 2rem;
+}
+
+#ingredientsList {
+  font-size: 1.3rem;
+}
+
+#recipeList {
+  font-size: 1.2rem;
+}
+
+.rightBox .overlay {
+  position: absolute; /* MUST be applied, to overlap on parent*/
+  top: 0;
+  left: 0;
+  height: 100%; /*Because we want this text to overlap on full element*/
+  width: 100%; /*Because we want this text to overlap on full element*/
+  background-color: rgba(36, 36, 34, 0.713);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+  opacity: 1;
+}
+
+.rightBox .overlay span {
+  border-radius: 20px;
+  color: white;
+  font-size: 1.2rem;
+}
